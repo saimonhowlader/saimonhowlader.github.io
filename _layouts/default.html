@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,300italic,400italic,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <button tabindex="0" class="headerNav">Blog</button>
+    <div tabindex="0" class="headerNav">
+        <h1><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
+        <p>Close</p>
+    </div>
+
+            {{ content }}
+
+        </div>
+        <!-- /.container -->
+        <footer>
+            <ul>
+                <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+                <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+            </ul>
+        </footer>
+    </body>
+
+</html>
