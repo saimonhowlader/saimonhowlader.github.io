@@ -1,0 +1,325 @@
+/*
+Global
+*/
+html {
+    background-color: white;
+    font-size: 16px;
+}
+
+/*
+Sets all elements to start from the edge.
+Hides scroll bars that would result from the "sidebar."
+*/
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+/*
+Main Navigation (homepage and blog) 
+*/
+
+/*
+Draws a border under the entire div.
+Overflow set to hidden due to containers holding floating items not wanting to stretch.
+Width is set to 100% in order to support explorer.
+*/
+div.headerNav {
+    border-bottom: 1px gray solid;
+    overflow: hidden;
+    width: 100vw;
+    height: 6vh;
+}
+
+/*
+The .headerNav elements stay gray until hovered over.
+*/
+.headerNav a, button.headerNav, .headerNav p {
+    color: gray;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    opacity: .54;
+    font-weight: normal;
+    transition: color .5s ease;
+}
+
+/*
+The "home-name" is moved to the left and given some aesthetic paddng and default margins are removed.
+*/
+.headerNav h1 {
+    float: left;
+    margin: 0;
+    padding: .75ch 20px .375ch;
+}
+
+/*
+The blog button is moved to the right and is stripped of all button aesthetics and given the same padding as the "home-name." The button is not in a div and has an absolute position so that it can have a z-index which in turn is required so that it can switch places with the "close" text.
+*/
+button.headerNav {
+    background-color: black;
+    border: none;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 5px;
+}
+
+/*
+As with the blog button the "close" text is stripped of its default margins and is in the same position. It is set to transparent but this changes when the blog button is focused. Its z-index is 0 but it trades values with the blog button when the latter is in focus.
+*/
+.headerNav p {
+    margin: 0;
+    padding: .75ch 20px .375ch;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    color: transparent;
+}
+
+main {
+    height: 94vh;
+}
+
+/*
+When the blog button is in focus the main part of the page and the sidebar that is hidden off to the side slides over.
+*/
+button.headerNav:focus ~ .mainAndSidebar {
+    -webkit-transform: translateX(-30%) scale(1);
+    
+}
+
+button.headerNav:focus ~ main {
+    background-color: #808080;
+}
+
+
+
+/*
+When the blog button is in focus the "close" text changes its z-index to 1 while the blog button's z-index changes to 0 in the next css declaration. The "close" text is first set to transparent but changes to the same color settings as the other elements in the .headerNav. 
+*/
+button.headerNav:focus ~ .headerNav p {
+    color: gray;
+    opacity: .54;
+    z-index: 3;
+}
+
+
+/*
+When the blog button is in focus its z-index changes to 0 and goes behind the "close" text and becomes transparent. The transition declaration is set to 0secs for aesthetic reasons.
+*/
+button:focus {
+    color: transparent;
+    transition: 0s;
+    outline: none;
+}
+
+/*
+The "home-name" and blog button text changes to blue when the visitor hovers over it. 
+*/
+.headerNav a:hover, button.headerNav:hover, button:focus ~ .headerNav p:hover {
+    color: #172BAE;
+    opacity: .84;
+}
+
+/*
+The "home-name" which is a link is not changed even if it is visited.
+*/
+.headerNav a:visited {
+    color: gray;
+    opacity: .54;
+} 
+
+/*
+Text-decoration is set to none to get rid of underlineing under the "home-name".
+*/
+.headerNav a {
+    text-decoration: none;
+} 
+
+div.mainAndSidebar {
+    transition: -webkit-transform 500ms ease;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    -webkit-transform: translateX(100%);
+    z-index: 4;
+}
+
+nav div.nameTaglineAndDescription {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    
+}
+
+nav a.homeName {
+    font-size: 1.8rem;
+    color: #172BAE;
+    opacity: .84;
+    padding: .75ch 20px .375ch;
+    
+}
+
+nav div.tagline a {
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+nav div.recentPosts {
+    text-align: center;
+    text-decoration: none;
+}
+
+nav div.recentPosts a {
+    display: inline-block;
+    font-size: 1.25rem;
+    list-style: none;
+    
+}
+
+nav div.recentPosts p {
+    display: inline-block;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+/*
+
+*/
+div.mainAndSidebar {
+    clear: both;
+}
+
+/*
+Image and Links
+*/
+
+.frontpage-image {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.frontpage-links {
+    text-align: center;
+}
+
+.frontpage-links a {
+    font-size: 1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #172BAE;
+    text-decoration: none;
+    transition: color .5s ease;
+    opacity: .84;
+    position: relative;
+    z-index: 50;
+}
+
+.frontpage-links a:hover {
+    opacity: .5;
+}
+
+.blog-home a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+
+/*
+Blog Homepage
+*/
+
+.blog-home {
+    color: black;
+    text-align: center;
+    padding-top: 2.25rem;
+    padding-bottom: 10px;
+    margin: 0;
+    opacity: .54;
+    font-size: 2.25rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: normal;
+}
+
+.excerpts-list {
+    margin: 0 auto;
+    max-width: 80ch;
+    padding: 0;
+}
+
+.excerpt-title-permalink a {
+    font-size: 1.5rem;
+    color: #172BAE;
+    opacity: .84;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    color: #172BAE;
+    text-decoration: none;
+}
+
+.excerpt-metadata {
+    color: black;
+    opacity: .84;
+    margin-top: -2.5ch;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.the-excerpt {
+    color: black;
+    opacity: .84;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+Single Blog Post
+*/
+.post-title {
+    color: black;
+    text-align: center;
+    padding-top: 2.25rem;
+    padding-bottom: 0px;
+    margin: 0;
+    opacity: .54;
+    font-size: 2.25rem;
+    font-family: 'Bree Serif', serif;
+    font-weight: normal;
+    font-size: 2.7rem;
+}
+
+.single-post {
+    margin: 0 auto;
+    max-width: 80ch;
+    padding: 0;
+}
+
+.post-metadata {
+    color: black;
+    opacity: .84;
+    margin-top: -.5ch;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.post-content {
+    color: #222222;
+    opacity: .84;
+    font-size: 1.2rem;
