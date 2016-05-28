@@ -1,9 +1,41 @@
----
-layout: default
-title: Saimon Howlader
---- 
- 
- <main>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS only responsive menu</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,300italic,400italic,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="headerNav">
+        <h1><a href="#">Saimon Howlader</a></h1>
+    </div>
+    <div class="outer">
+        <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+        <label for="slide-checkbox" class="slide-toggle" onclick></label>
+        <div class="slide">
+            <nav>
+                <div class="homeName">
+                    <a href="#">Saimon Howlader</a>
+                </div>
+                <div class="tagline">
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="description">
+                    <p>This is just another bobo blog lmao</p>
+                </div>
+                <div class="recentPosts">
+                    <a href="#">Recent Posts</a>
+                    <a href="#">post 1</a>
+                    <a href="#">post 2</a>
+                </div>
+            </nav>
+            <main>
                 <div class="frontpage-image">
                     <img src="<?php bloginfo('template_directory');?>/temp.jpg" alt="My face" style="width:150px;height:150px;">
                 </div>
@@ -15,3 +47,8 @@ title: Saimon Howlader
                     <p><a href="https://github.com/SaimonHowlader">github.com/SaimonHowlader</a></p>
                 </div>
             </main>
+        </div>
+    </div>
+</body>
+
+</html>
