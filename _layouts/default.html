@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en-US">
 
+<html>
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,37 @@
 </head>
 
 <body>
-    <button tabindex="0" class="headerNav">Blog</button>
-    <div tabindex="0" class="headerNav">
+    <div class="headerNav">
         <h1><a href="#">Saimon Howlader</a></h1>
-        <p>Close</p>
     </div>
+    <div class="outer">
+        <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+        <label for="slide-checkbox" class="slide-toggle" onclick></label>
+        <div class="slide">
+            <nav>
+                <div class="homeName">
+                    <a href="#">Saimon Howlader</a>
+                </div>
+                <div class="tagline">
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="description">
+                    <p>This is just another bobo blog lmao</p>
+                </div>
+                <div class="recentPosts">
+                    <a href="#">Recent Posts</a>
+                    <a href="#">post 1</a>
+                    <a href="#">post 2</a>
+                </div>
+            </nav>
+    
+    
+    
+    
+    
+    
 
             {{ content }}
 
