@@ -11,6 +11,6 @@ title: Saimon Howlader's Blog
 			            {{ post.date | date_to_string }}
 			        </time>
 	    		</p>
-	    		<h3 class="the-excerpt"><?php the_excerpt() ?></h3>
+	    		<h3 class="the-excerpt">{{ post.excerpt }}</h3>
     		{% endfor %}
 	</div>
