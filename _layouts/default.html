@@ -28,13 +28,13 @@
                 </div>
                 <div class="recentPosts">
                     <p>Recent Posts</p>
+                    {% for post in site.posts %}
+	                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
                 </div>
             </nav>
             <main>
                 {{ content }}
-                {% for post in site.posts %}
-	                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
             </main>
         </div>
     </div>
