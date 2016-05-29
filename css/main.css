@@ -412,7 +412,7 @@ Blog Homepage
 .excerpt-metadata {
     color: black;
     opacity: .84;
-    margin-top: -2.5ch;
+    margin-top: 0ch;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1rem;
