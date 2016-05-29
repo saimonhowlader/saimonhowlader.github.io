@@ -6,8 +6,9 @@ title: Saimon Howlader's Blog
 	<div class="excerpts-list">
 		{% for post in site.posts %}
 	    		<h2 class="excerpt-title-permalink"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-	    		<p class="excerpt-metadata">Posted on 
+	    		<p class="excerpt-metadata"> 
 			        <time>
+			        	Posted on
 			            {% assign d = post.date | date: "%-d"  %}
 					{{ post.date | date: "%B" }} 
 					{% case d %}
