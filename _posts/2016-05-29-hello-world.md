@@ -4,7 +4,7 @@ layout: post
 title: "Hello, World!"
 ---
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi! I like to write about projects that keep me busy. Up till now I have been keeping track of my work and thought processes in a little book that I'd carry just about everywhere I took my bag/laptop, but a couple months ago I realized that carrying anything more than a laptop and my phone was becoming cumbersome. At some point I decided to finally get around to publishing a personal website for myself with my contact info.  
+<space><space><space><space>*<space>Hi! I like to write about projects that keep me busy. Up till now I have been keeping track of my work and thought processes in a little book that I'd carry just about everywhere I took my bag/laptop, but a couple months ago I realized that carrying anything more than a laptop and my phone was becoming cumbersome. At some point I decided to finally get around to publishing a personal website for myself with my contact info.  
 Some of my clients request that I write up documentation for them whenever I help them with some issue with their computers, websites or anything else in between. I figured it would be a good idea to keep a record of that kind of documentation on a website for both my clients as well myself as a sort of portfolio and reference manual. I was also becoming frustrated with the lack of documentation within the chromebook/dualbooting community so I figured I might as well keep a public record of that kind of work as well since I was already keeping records for myself.
 
 
