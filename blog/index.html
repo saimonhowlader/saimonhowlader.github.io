@@ -2,13 +2,12 @@
 layout: default
 title: Saimon Howlader's Blog
 ---
-	<h1 class="blog-home">All Posts</h1>
+	<h1 class="blog-home">All Posts Posted on</h1>
 	<div class="excerpts-list">
 		{% for post in site.posts %}
 	    		<h2 class="excerpt-title-permalink"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-	    		<p class="excerpt-metadata"> 
+	    		<p class="excerpt-metadata"> Posted on
 			        <time>
-			        	Posted on
 			            {% assign d = post.date | date: "%-d"  %}
 					{{ post.date | date: "%B" }} 
 					{% case d %}
