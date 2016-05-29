@@ -8,7 +8,15 @@ title: Saimon Howlader's Blog
 	    		<h2 class="excerpt-title-permalink"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 	    		<p class="excerpt-metadata">
 			        <time>
-			            {{ post.date | date_to_string }}
+			            {% assign d = page.date | date: "%-d"  %}
+					{{ page.date | date: "%B" }} 
+					{% case d %}
+					  {% when '1' or '21' or '31' %}{{ d }}st
+					  {% when '2' or '22' %}{{ d }}nd
+					  {% when '3' or '23' %}{{ d }}rd
+					  {% else %}{{ d }}th
+					  {% endcase %}, 
+					{{ page.date | date: "%Y" }}
 			        </time>
 	    		</p>
 	    		<h3 class="the-excerpt">{{ post.excerpt }}</h3>
