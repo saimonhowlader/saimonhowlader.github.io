@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,300italic,400italic,800' rel='stylesheet' type='text/css'>
+    <title>{{ page.title }}</title>
 </head>
 
 <body>
-    <div class="headerNav">
+    <div class="header-nav">
         <h1><a href="/">Saimon Howlader</a></h1>
     </div>
     <div class="outer">
@@ -18,19 +17,19 @@
         <label for="slide-checkbox" class="slide-toggle" onclick></label>
         <div class="slide">
             <nav>
-                <div class="aboutMe">
+                <div class="about-me">
                     <p class="hi">
                         Hi!
                     </p>
-                    <p class="iliketo">
+                    <p class="i-like-to">
                         I like to write about projects that keep me busy.
                     </p>
                 </div>
-                <div class="recentPosts">
+                <div class="recent-posts">
                     <p>Recent Posts</p>
                     {% for post in site.posts %}
-	                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
+                    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                    {% endfor %}
                 </div>
             </nav>
             <main>
