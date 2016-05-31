@@ -29,7 +29,7 @@ body {
 	}
 }
 
-div.front-headernav,
+div.front-header-nav,
 div.header-nav {
 	border-bottom: 1px gray solid;
 	/*creates a line under the site title for aesthetics*/
