@@ -1,7 +1,41 @@
 ---
-layout: default
 title: Saimon Howlader
 ---
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:300,400,300italic,400italic,800' rel='stylesheet' type='text/css'>
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    <div class="front-header-nav">
+        <h1><a href="/">Saimon Howlader</a></h1>
+    </div>
+    <div class="outer">
+        <input type="checkbox" id="slide-checkbox" class="slide-checkbox" role="button">
+        <label for="slide-checkbox" class="slide-toggle" onclick></label>
+        <div class="slide">
+            <nav>
+                <div class="about-me">
+                    <p class="hi">
+                        Hi!
+                    </p>
+                    <p class="i-like-to">
+                        I like to write about projects that keep me busy.
+                    </p>
+                </div>
+                <div class="recent-posts">
+                    <p>Recent Posts</p>
+                    {% for post in site.posts %}
+                    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </div>
+            </nav>
+            <main>
 <div class="front-page-image">
 	<img src="/assets/temp1.jpg" alt="My face" style="width:150px;height:150px;">
 </div>
@@ -13,3 +47,9 @@ title: Saimon Howlader
 	<p><a href="http://stackexchange.com/users/7401173/saimon-howlader">stackexchange.com/users/7401173</a></p>
 	<p><a href="https://github.com/saimonhowlader">github.com/saimonhowlader</a></p>
 </div>
+ </main>
+        </div>
+    </div>
+</body>
+
+</html>
