@@ -1,1 +1,800 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+zz
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*---TOP NAVIGATION BAR STYLES---*/
+/*
+The top navigation bar is given a border for aesthetics.
+*/
+nav.topnav {
+  border-bottom: 1px gray solid; }
+
+/*
+The .headerNav elements are gray by default until they are hovered over and their transition effect is given.
+*/
+.name,
+.sidenav-toggle {
+  color: gray;
+  font-family: Verddana, sans-serif;
+  opacity: .54;
+  font-weight: normal;
+  transition: color .5s ease;
+  font-size: 1.25em; }
+
+/*
+The two elements in the top navigation bar change colors and opacity when they are hovered over.
+*/
+.name:hover,
+.sidenav-toggle:hover {
+  color: #172BAE;
+  opacity: .84; }
+
+/*---SIDE NAVIGATION BAR STYLES---*/
+.sidenav {
+  border-left: 1px gray solid;
+  background-color: #f6f6f6; }
+
+.i-like-to {
+  font-weight: normal;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  opacity: .84; }
+
+.hi {
+  font-weight: normal;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  opacity: .84; }
+
+.recent-posts li a {
+  font-weight: normal;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  opacity: .84;
+  transition: color .5s ease; }
+
+.recent-posts p {
+  font-weight: normal;
+  font-family: Georgia, serif;
+  color: #1a1a1a;
+  opacity: .84; }
+
+.sidenav a:hover,
+.sidenav div.recent-posts li a:hover {
+  opacity: .5; }
+
+/*---MAIN AND SIDE NAVIGATION BAR TRANSITION STYLES---*/
+.sidenav-checkbox:checked ~ .main-and-sidenav main {
+  z-index: 1 !important;
+  background-color: #807F7F; }
+
+.sidenav-checkbox:checked ~ .main-and-sidenav main .front-page-links p a {
+  color: #0C1658; }
+
+/*---FRONTPAGE STYLES---*/
+.front-page-links a {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #172BAE;
+  transition: color .5s ease;
+  opacity: .84;
+  line-height: 1.6; }
+
+.front-page-links a:hover {
+  opacity: .5; }
+
+/*---BLOG HOME STYLES---*/
+.blog-home a:visited {
+  color: red;
+  text-decoration: none; }
+
+.blog-home {
+  color: black;
+  opacity: .54;
+  font-size: 2.25rem;
+  font-family: Georgia, serif;
+  font-weight: normal; }
+
+.excerpt-title-permalink a {
+  font-size: 1.5rem;
+  color: #172BAE;
+  opacity: .84;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #172BAE; }
+
+.excerpt-metadata {
+  color: black;
+  opacity: .84;
+  font-family: Georgia, serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.the-excerpt {
+  color: black;
+  opacity: .84;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Georgia, serif; }
+
+/*---SINGLE BLOG POST STYLES---*/
+.post-title {
+  color: black;
+  opacity: .54;
+  font-size: 2.25rem;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 2.7rem; }
+
+.post-metadata {
+  color: black;
+  opacity: .84;
+  font-family: Georgia, serif;
+  font-weight: 300;
+  font-size: 1rem; }
+
+.post-content {
+  color: #222222;
+  opacity: .84;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Georgia, serif; }
+
+/*
+Most of the code is copied from this article: https://www.smashingmagazine.com/2016/05/fluid-typography/
+*/
+/*These are two scales for modular typography. The first is for mobile devices,
+and the second is for desktops.*/
+/*MDL suggests using 14px for mobile devices, and it looks alright, and anything more than 20ish px as a font size seems to look gaudy.*/
+html {
+  font-size: 14px; }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(14px + 4 * ((100vw - 320px) / 960)); } }
+  @media screen and (min-width: 1280px) {
+    html {
+      font-size: 18px; } }
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0.5rem 0;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 1.29616rem; }
+
+h2 {
+  font-size: 1.21477rem; }
+
+h3 {
+  font-size: 1.13849rem; }
+
+h4 {
+  font-size: 1.067rem; }
+
+p {
+  font-size: 1rem; }
+
+h1 {
+  font-size: 1.29616rem; }
+  @media screen and (min-width: 37.5rem) {
+    h1 {
+      font-size: calc(1.29616rem + 1.86118 * ((100vw - 37.5rem) / 42.5)); } }
+  @media screen and (min-width: 80rem) {
+    h1 {
+      font-size: 3.15733rem; } }
+
+h2 {
+  font-size: 1.21477rem; }
+  @media screen and (min-width: 37.5rem) {
+    h2 {
+      font-size: calc(1.21477rem + 1.15383 * ((100vw - 37.5rem) / 42.5)); } }
+  @media screen and (min-width: 80rem) {
+    h2 {
+      font-size: 2.36859rem; } }
+
+h3 {
+  font-size: 1.13849rem; }
+  @media screen and (min-width: 37.5rem) {
+    h3 {
+      font-size: calc(1.13849rem + 0.6384 * ((100vw - 37.5rem) / 42.5)); } }
+  @media screen and (min-width: 80rem) {
+    h3 {
+      font-size: 1.77689rem; } }
+
+h4 {
+  font-size: 1.067rem; }
+  @media screen and (min-width: 37.5rem) {
+    h4 {
+      font-size: calc(1.067rem + 0.266 * ((100vw - 37.5rem) / 42.5)); } }
+  @media screen and (min-width: 80rem) {
+    h4 {
+      font-size: 1.333rem; } }
+
+p {
+  font-size: 1rem; }
+  @media screen and (min-width: 37.5rem) {
+    p {
+      font-size: calc(1rem + 0 * ((100vw - 37.5rem) / 42.5)); } }
+  @media screen and (min-width: 80rem) {
+    p {
+      font-size: 1rem; } }
+
+/*
+The top navigation is set to flex for a fluid layout, and the elements are pushed to the ends of the "row."
+*/
+.topnav {
+  display: flex;
+  justify-content: space-between; }
+
+/*
+The elements are stripped of the default styles for links and labels, given some padding and their cursor behaviors are normalized.
+*/
+.name,
+.sidenav-toggle {
+  padding: .5ch 1ch .3ch 1ch;
+  cursor: pointer;
+  text-decoration: none; }
+
+/*
+The checkbox is hidden.
+*/
+.sidenav-checkbox {
+  display: none; }
+
+/* Removes the outlines on the blog button.
+*/
+.sidenav-toggle,
+.sidenav-toggle:active,
+.sidenav-toggle:focus {
+  border: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent; }
+
+/* @group nav */
+.sidenav {
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  height: 100%;
+  /*
+  	 * The width determines how much of the page you want to
+  	 * remain visible once the menu slides over
+  	 */
+  width: 33ch;
+  /*
+  	 * Must be absolutely positioned otherwise it won't sit
+  	 * side by side with the content but instead above it
+  	 * */
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* Keeps the menu hidden off-canvas to the left */
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  padding-left: 5px; }
+
+.sidenav .home-mame,
+.sidenav .tagline,
+.sidenav .about-me {
+  text-align: center; }
+
+.sidenav div.about-me {
+  padding: 80px 2ch 3ch 2ch; }
+
+.sidenav div.about-me p.hi {
+  text-align: center; }
+
+.sidenav div.about-me p.i-like-to {
+  float: none;
+  display: block;
+  text-decoration: none;
+  padding: 1.2ch 0 0 0;
+  text-align: center; }
+
+.sidenav div.recent-posts {
+  padding: 3ch 2ch 3ch 2ch;
+  text-align: center; }
+
+.sidenav div.recent-posts li {
+  list-style: none;
+  text-align: center; }
+
+.sidenav div.recent-posts li a {
+  text-decoration: none;
+  float: none;
+  padding: 1.2ch 0 0 0; }
+
+.sidenav div.recent-posts p {
+  padding-bottom: .8ch; }
+
+/*
+	 * The transition value determines the speed
+	 * at which the content will slide over
+	 */
+.main-and-sidenav {
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden; }
+
+/*
+	 * Enable hardware acceleration and stop flickering
+	 * More details: http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/
+	 * Add more browser prefixes as required for your environment
+	 */
+/*
+	 * When the checkbox is checked slide the content
+	 * over and the checkbox with it
+	 */
+.sidenav-checkbox:checked ~ .main-and-sidenav {
+  -webkit-transform: translateX(-33ch) scale(1);
+  -moz-transform: translateX(-33ch) scale(1);
+  -ms-transform: translateX(-33ch) scale(1);
+  -o-transform: translateX(-33ch) scale(1);
+  transform: translateX(-33ch) scale(1); }
+
+.sidenav-checkbox:checked ~ .main-and-sidenav main {
+  z-index: 1 !important;
+  background-color: #807F7F; }
+
+.sidenav-checkbox:checked ~ .main-and-sidenav main .front-page-links p a {
+  color: #0C1658; }
+
+/*
+Image and Links
+*/
+.frontpage-image-and-links {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 15vh; }
+
+.front-page-image {
+  text-align: center; }
+
+.front-page-links {
+  text-align: center; }
+
+.front-page-links a {
+  text-decoration: none; }
+
+/*
+Blog Homepage
+*/
+.blog-home {
+  text-align: center;
+  padding-top: 2.25rem;
+  padding-bottom: 10px;
+  margin: 0; }
+
+.excerpts-list {
+  margin: 0 auto;
+  max-width: 80ch;
+  padding: 0; }
+
+.excerpt-title-permalink a {
+  text-decoration: none; }
+
+.excerpt-metadata {
+  margin-top: 2ch; }
+
+/*
+Single Blog Post
+*/
+.post-title {
+  text-align: center;
+  padding-top: 2.25rem;
+  padding-bottom: 0px;
+  margin: 0; }
+
+.single-post {
+  margin: 0 auto;
+  max-width: 80ch;
+  padding: 0; }
+
+.post-metadata {
+  color: black;
+  opacity: .84;
+  margin-top: -.5ch;
+  text-align: center; }
+
+.post-content {
+  padding: 1ch 4ch 1ch 4ch; }
+
+/* Fixes the pseudo class & sibling bug (http://css-tricks.com/webkit-sibling-bug)*/
+body {
+  -webkit-animation: bugfix infinite 1s; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+
+.outer,
+.main-and-sidenav,
+main {
+  height: 100%; }
+
+/*# sourceMappingURL=styles.css.map */
