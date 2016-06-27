@@ -2,4 +2,4 @@ name: Saimon Howlader
 markdown: kramdown
 permalink: /blog/:title
 sass:
-  style: compressed
+    sass_dir: _sass
