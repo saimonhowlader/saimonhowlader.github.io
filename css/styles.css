@@ -668,6 +668,9 @@ div.recent-posts {
 .recent-posts p a {
   text-decoration: none; }
 
+.recent-posts p a:visited {
+  text-decoration: none; }
+
 .recent-posts ul {
   padding: 0; }
 
