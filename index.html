@@ -16,35 +16,12 @@
 </head>
 
 <body>
-	<nav class="topnav">
-		<a class="name" href="/">Saimon Howlader</a>
-		<label for="sidenavCheckbox" class="sidenav-toggle" onclick>Blog</label>
-	</nav>
+	{% include topnav.html %}
 
 	<div class="outer">
 		<input type="checkbox" id="sidenavCheckbox" class="sidenav-checkbox" role="button">
 		<div class="main-and-sidenav">
-			<nav class="sidenav">
-				<div class="about-me">
-					<p class="hi">
-						Hi!
-					</p>
-					<p class="i-like-to">
-						I like to write about projects that keep me busy.
-					</p>
-				</div>
-				<div class="recent-posts">
-					<p>Recent Posts</p>
-					
-					<ul>
- 						<li>
- 							<a href="/blog/hello-world">Hello, World!</a>
- 						</li>
-					</ul>
-					
-				</div>
-			</nav>
-
+			{% include sidenav.html %}
 			<main>
 				<div class="frontpage-image-and-links">
 					<div class="front-page-image">
