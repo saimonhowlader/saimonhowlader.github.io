@@ -452,33 +452,27 @@ The two elements in the top navigation bar change colors and opacity when they a
   text-decoration: none; }
 
 .blog-home {
-  color: black;
+  color: #1a1a1a;
   opacity: .54;
-  font-size: 2.25rem;
-  font-family: Georgia, serif;
+  font-family: Verdana, sans-serif;
   font-weight: normal; }
 
 .excerpt-title-permalink a {
-  font-size: 1.5rem;
   color: #172BAE;
   opacity: .84;
-  font-family: Georgia, serif;
-  font-weight: 400;
-  color: #172BAE; }
+  font-family: Verdana, sans-serif;
+  font-weight: normal; }
 
 .excerpt-metadata {
-  color: black;
+  color: #1a1a1a;
+  opacity: .54;
+  font-family: Verdana, sans-serif; }
+
+.the-excerpt p {
+  color: #1a1a1a;
   opacity: .84;
   font-family: Georgia, serif;
-  font-weight: 300;
-  font-size: 1rem; }
-
-.the-excerpt {
-  color: black;
-  opacity: .84;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: Georgia, serif; }
+  line-height: 1.6; }
 
 /*---SINGLE BLOG POST STYLES---*/
 .post-title {
@@ -739,20 +733,32 @@ Blog Homepage
 */
 .blog-home {
   text-align: center;
-  padding-top: 2.25rem;
-  padding-bottom: 10px;
-  margin: 0; }
+  padding-top: 8vh;
+  padding-bottom: 7vh; }
 
 .excerpts-list {
   margin: 0 auto;
   max-width: 80ch;
   padding: 0; }
 
+.excerpt-title-permalink {
+  text-align: center; }
+
 .excerpt-title-permalink a {
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 0;
+  margin: auto; }
 
 .excerpt-metadata {
-  margin-top: 2ch; }
+  text-align: center;
+  margin-top: -1.5ch;
+  text-indent: .3ch; }
+
+.the-excerpt {
+  text-indent: 4ch;
+  max-width: 55ch;
+  margin: auto;
+  padding-top: 2ch; }
 
 /*
 Single Blog Post
