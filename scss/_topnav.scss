@@ -1,0 +1,37 @@
+/*
+The top navigation is set to flex for a fluid layout, and the elements are pushed to the ends of the "row."
+*/
+.topnav {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*
+The elements are stripped of the default styles for links and labels, given some padding and their cursor behaviors are normalized.
+*/
+.name,
+.sidenav-toggle {
+	padding: .5ch 1ch .3ch 1ch;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+/*
+The checkbox is hidden.
+*/
+.sidenav-checkbox {
+	display: none;
+}
+
+
+/* Removes the outlines on the blog button.
+*/
+
+.sidenav-toggle,
+.sidenav-toggle:active,
+.sidenav-toggle:focus {
+	border: none !important;
+	outline: none !important;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

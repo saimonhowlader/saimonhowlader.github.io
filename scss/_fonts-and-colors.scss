@@ -1,0 +1,176 @@
+/*---TOP NAVIGATION BAR STYLES---*/
+
+
+/*
+The top navigation bar is given a border for aesthetics.
+*/
+
+nav.topnav {
+	border-bottom: 1px gray solid;
+}
+
+
+/*
+The .headerNav elements are gray by default until they are hovered over and their transition effect is given.
+*/
+
+.name,
+.sidenav-toggle {
+	color: gray;
+	font-family: Verddana, sans-serif;
+	opacity: .54;
+	font-weight: normal;
+	transition: color .5s ease;
+	font-size: 1.25em;
+}
+
+
+/*
+The two elements in the top navigation bar change colors and opacity when they are hovered over.
+*/
+
+.name:hover,
+.sidenav-toggle:hover {
+	color: #172BAE;
+	opacity: .84;
+}
+
+
+/*---SIDE NAVIGATION BAR STYLES---*/
+
+.sidenav {
+	border-left: 1px gray solid;
+	background-color: #f6f6f6/*2B3233*/
+	;
+}
+
+.i-like-to {
+	font-weight: normal;
+	font-family: Georgia, serif;
+	color: #1a1a1a;
+	opacity: .84;
+}
+
+.hi {
+	font-weight: normal;
+	font-family: Georgia, serif;
+	color: #1a1a1a;
+	opacity: .84;
+}
+
+.recent-posts li a {
+	font-weight: normal;
+	font-family: Georgia, serif;
+	color: #1a1a1a;
+	opacity: .84;
+	transition: color .5s ease;
+}
+
+.recent-posts p {
+	font-weight: normal;
+	font-family: Georgia, serif;
+	color: #1a1a1a;
+	opacity: .84;
+}
+
+.sidenav a:hover,
+.sidenav div.recent-posts li a:hover {
+	opacity: .5;
+}
+
+
+/*---MAIN AND SIDE NAVIGATION BAR TRANSITION STYLES---*/
+
+.sidenav-checkbox:checked ~ .main-and-sidenav main {
+	z-index: 1 !important;
+	background-color: #807F7F;
+}
+
+.sidenav-checkbox:checked ~ .main-and-sidenav main .front-page-links p a {
+	color: #0C1658;
+}
+
+
+/*---FRONTPAGE STYLES---*/
+
+.front-page-links a {
+	font-family: Georgia, serif;
+	font-weight: 400;
+	color: #172BAE;
+	transition: color .5s ease;
+	opacity: .84;
+	line-height: 1.6;
+}
+
+.front-page-links a:hover {
+	opacity: .5;
+}
+
+
+/*---BLOG HOME STYLES---*/
+
+.blog-home a:visited {
+	color: red;
+	text-decoration: none;
+}
+
+.blog-home {
+	color: black;
+	opacity: .54;
+	font-size: 2.25rem;
+	font-family: Georgia, serif;
+	font-weight: normal;
+}
+
+.excerpt-title-permalink a {
+	font-size: 1.5rem;
+	color: #172BAE;
+	opacity: .84;
+	font-family: Georgia, serif;
+	font-weight: 400;
+	color: #172BAE;
+}
+
+.excerpt-metadata {
+	color: black;
+	opacity: .84;
+	font-family: Georgia, serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.the-excerpt {
+	color: black;
+	opacity: .84;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: Georgia, serif;
+}
+
+
+/*---SINGLE BLOG POST STYLES---*/
+
+.post-title {
+	color: black;
+	opacity: .54;
+	font-size: 2.25rem;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-size: 2.7rem;
+}
+
+.post-metadata {
+	color: black;
+	opacity: .84;
+	font-family: Georgia, serif;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.post-content {
+	color: #222222;
+	opacity: .84;
+	font-size: 1.2rem;
+	font-weight: 400;
+	font-family: Georgia, serif;
+}

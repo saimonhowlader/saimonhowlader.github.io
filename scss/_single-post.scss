@@ -1,0 +1,27 @@
+/*
+Single Blog Post
+*/
+
+.post-title {
+	text-align: center;
+	padding-top: 2.25rem;
+	padding-bottom: 0px;
+	margin: 0;
+}
+
+.single-post {
+	margin: 0 auto;
+	max-width: 80ch;
+	padding: 0;
+}
+
+.post-metadata {
+	color: black;
+	opacity: .84;
+	margin-top: -.5ch;
+	text-align: center;
+}
+
+.post-content {
+	padding: 1ch 4ch 1ch 4ch;
+}
