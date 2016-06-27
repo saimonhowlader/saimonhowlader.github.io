@@ -27,7 +27,6 @@
 	-ms-transform: translateX(100%);
 	-o-transform: translateX(100%);
 	transform: translateX(100%);
-	padding-left: 5px;
 }
 
 .sidenav .home-mame,
@@ -52,12 +51,16 @@
 	text-align: center;
 }
 
-.sidenav div.recent-posts {
-	padding: 3ch 2ch 3ch 2ch;
+div.recent-posts {
+	padding: 0;
 	text-align: center;
 }
 
-.sidenav div.recent-posts li {
+.recent-posts ul {
+	padding: 0;
+}
+
+.recent-posts li {
 	list-style: none;
 	text-align: center;
 }
