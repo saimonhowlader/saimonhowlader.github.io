@@ -455,12 +455,13 @@ The two elements in the top navigation bar change colors and opacity when they a
   color: #1a1a1a;
   opacity: .54;
   font-family: Verdana, sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  text-decoration: underline; }
 
 .excerpt-title-permalink a {
   color: #172BAE;
   opacity: .84;
-  font-family: Verdana, sans-serif;
+  font-family: Georgia, serif;
   font-weight: normal; }
 
 .excerpt-metadata {
@@ -475,27 +476,33 @@ The two elements in the top navigation bar change colors and opacity when they a
   line-height: 1.6; }
 
 /*---SINGLE BLOG POST STYLES---*/
-.post-title {
-  color: black;
-  opacity: .54;
-  font-size: 2.25rem;
-  font-family: Georgia, serif;
-  font-weight: normal;
-  font-size: 2.7rem; }
+div.single-post {
+  padding-top: 8vh; }
 
-.post-metadata {
-  color: black;
+.post-title {
+  color: #1a1a1a;
   opacity: .84;
   font-family: Georgia, serif;
-  font-weight: 300;
-  font-size: 1rem; }
+  font-weight: normal; }
+
+.post-metadata {
+  color: #1a1a1a;
+  opacity: .54;
+  font-family: Verdana, sans-serif;
+  font-weight: 300; }
+
+div.post-content {
+  margin: auto;
+  max-width: 60ch; }
 
 .post-content {
   color: #222222;
   opacity: .84;
-  font-size: 1.2rem;
   font-weight: 400;
-  font-family: Georgia, serif; }
+  font-family: Georgia, serif;
+  text-indent: 4ch;
+  padding-top: 3ch;
+  max-width: 60ch; }
 
 /*
 Most of the code is copied from this article: https://www.smashingmagazine.com/2016/05/fluid-typography/
