@@ -468,7 +468,7 @@ The two elements in the top navigation bar change colors and opacity when they a
   opacity: .54;
   font-family: Verdana, sans-serif; }
 
-.the-excerpt p {
+.the-excerpt {
   color: #1a1a1a;
   opacity: .84;
   font-family: Georgia, serif;
@@ -635,8 +635,7 @@ The checkbox is hidden.
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
-  transform: translateX(100%);
-  padding-left: 5px; }
+  transform: translateX(100%); }
 
 .sidenav .home-mame,
 .sidenav .tagline,
@@ -656,11 +655,14 @@ The checkbox is hidden.
   padding: 1.2ch 0 0 0;
   text-align: center; }
 
-.sidenav div.recent-posts {
-  padding: 3ch 2ch 3ch 2ch;
+div.recent-posts {
+  padding: 0;
   text-align: center; }
 
-.sidenav div.recent-posts li {
+.recent-posts ul {
+  padding: 0; }
+
+.recent-posts li {
   list-style: none;
   text-align: center; }
 
