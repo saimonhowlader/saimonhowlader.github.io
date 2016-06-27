@@ -3,7 +3,7 @@
 
 <head>
 	<title>{{ page.title }}</title>
-	<meta name="description" content="{{ post.excerpt }}">
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<meta name="keywords" content="contact, blog, personal">
 	<meta name="author" content="Saimon Howlader">
 	<meta name="generator" content="Jekyll">
