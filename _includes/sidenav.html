@@ -1,0 +1,14 @@
+<nav class="sidenav">
+	<div class="about-me">
+		<p class="hi">Hi!</p>
+		<p class="i-like-to">I like to write about projects that keep me busy.</p>
+	</div>
+	<div class="recent-posts">
+		<p>Recent Posts</p>				
+		<ul>
+			{% for post in site.posts %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>					
+	</div>
+</nav>
