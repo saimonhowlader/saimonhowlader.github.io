@@ -115,36 +115,30 @@ The two elements in the top navigation bar change colors and opacity when they a
 }
 
 .blog-home {
-	color: black;
+	color: #1a1a1a;
 	opacity: .54;
-	font-size: 2.25rem;
-	font-family: Georgia, serif;
+	font-family: Verdana, sans-serif;
 	font-weight: normal;
 }
 
 .excerpt-title-permalink a {
-	font-size: 1.5rem;
 	color: #172BAE;
 	opacity: .84;
-	font-family: Georgia, serif;
-	font-weight: 400;
-	color: #172BAE;
+	font-family: Verdana, sans-serif;
+	font-weight: normal;
 }
 
 .excerpt-metadata {
-	color: black;
-	opacity: .84;
-	font-family: Georgia, serif;
-	font-weight: 300;
-	font-size: 1rem;
+	color: #1a1a1a;
+	opacity: .54;
+	font-family: Verdana, sans-serif;
 }
 
-.the-excerpt {
-	color: black;
+.the-excerpt p {
+	color: #1a1a1a;
 	opacity: .84;
-	font-size: 1rem;
-	font-weight: 400;
 	font-family: Georgia, serif;
+	line-height: 1.6;
 }
 
 
