@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ post.excerpt | remove: '<p>' | remove: '</p>' }}">
+	<meta name="keywords" content="contact, blog, personal">
+	<meta name="author" content="Saimon Howlader">
+	<meta name="generator" content="Jekyll">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<base href="http://www.saimonhowlader.com/" target="_blank">
+</head>
+
+<body>
+	<nav class="topnav">
+		<a class="name" href="/">Saimon Howlader</a>
+		<label for="sidenavCheckbox" class="sidenav-toggle" onclick>Blog</label>
+	</nav>
+
+	<div class="outer">
+		<input type="checkbox" id="sidenavCheckbox" class="sidenav-checkbox" role="button">
+		<div class="main-and-sidenav">
+			<nav class="sidenav">
+				<div class="about-me">
+					<p class="hi">
+						Hi!
+					</p>
+					<p class="i-like-to">
+						I like to write about projects that keep me busy.
+					</p>
+				</div>
+				<div class="recent-posts">
+					<p>Recent Posts</p>
+					
+					<ul>
+ -						{% for post in site.posts %}
+ -						<li>
+ -							<a href="{{ post.url }}">{{ post.title }}</a>
+ -						</li>
+ -						{% endfor %}
+ -					</ul>
+					
+				</div>
+			</nav>
+
+			<main>
+				{{ content }}
+			</main>
+		</div>
+	</div>
+</body>
+
+</html>
