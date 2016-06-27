@@ -500,9 +500,8 @@ div.post-content {
   opacity: .84;
   font-weight: 400;
   font-family: Georgia, serif;
-  text-indent: 4ch;
   padding-top: 3ch;
-  max-width: 60ch; }
+  max-width: 70ch; }
 
 /*
 Most of the code is copied from this article: https://www.smashingmagazine.com/2016/05/fluid-typography/
