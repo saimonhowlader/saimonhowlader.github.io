@@ -395,7 +395,7 @@ The two elements in the top navigation bar change colors and opacity when they a
 /*---SIDE NAVIGATION BAR STYLES---*/
 .sidenav {
   border-left: 1px gray solid;
-  background-color: #f6f6f6; }
+  background-color: #fff; }
 
 .i-like-to {
   font-weight: normal;
