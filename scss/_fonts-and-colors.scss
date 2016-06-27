@@ -61,7 +61,7 @@ The two elements in the top navigation bar change colors and opacity when they a
 .recent-posts li a {
 	font-weight: normal;
 	font-family: Georgia, serif;
-	color: #1a1a1a;
+	color: #172BAE;
 	opacity: .84;
 	transition: color .5s ease;
 }
@@ -69,6 +69,13 @@ The two elements in the top navigation bar change colors and opacity when they a
 .recent-posts p {
 	font-weight: normal;
 	font-family: Georgia, serif;
+	color: #172BAE;
+	opacity: .84;
+}
+
+.recent-posts p a {
+	font-family: Georgia, serif;
+	font-weight: normal;
 	color: #1a1a1a;
 	opacity: .84;
 }
@@ -95,7 +102,7 @@ The two elements in the top navigation bar change colors and opacity when they a
 
 .front-page-links a {
 	font-family: Georgia, serif;
-	font-weight: 400;
+	font-weight: normal;
 	color: #172BAE;
 	transition: color .5s ease;
 	opacity: .84;
@@ -171,9 +178,8 @@ div.post-content {
 .post-content {
 	color: #222222;
 	opacity: .84;
-	font-weight: 400;
+	font-weight: normal;
 	font-family: Georgia, serif;
 	padding-top: 3ch;
 	max-width: 70ch;
 }
-
