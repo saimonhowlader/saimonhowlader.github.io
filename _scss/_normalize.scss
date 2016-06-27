@@ -417,3 +417,32 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
+/*---------MOSTLY PERSONAL-------------*/
+/* Fixes the pseudo class & sibling bug (http://css-tricks.com/webkit-sibling-bug)*/
+
+body {
+	-webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+	from {
+		padding: 0;
+	}
+	to {
+		padding: 0;
+	}
+}
+
+html,
+body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.outer,
+.main-and-sidenav,
+main {
+	height: 100%;
+}
