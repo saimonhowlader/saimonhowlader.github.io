@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: 'Jekyll Blog, GitHub Pages Preface'
+title: 'Jekyll Blog, GitHub Pages -1'
 excerpt: >-
   I wanted to set up a small website with my contact information and a blog
   where I could document my work. I also needed to brush up on frontend
