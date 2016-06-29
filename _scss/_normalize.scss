@@ -435,7 +435,7 @@ body {
 
 html,
 body {
-	height: auto;
+	height: calc(100vh - 3.5ch);
 	overflow-x: hidden;
 }
 
