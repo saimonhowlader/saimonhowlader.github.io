@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: 'Launching a personal website, part 1'
+title: 'Jekyll Blog, Hosted on GitHub'
 excerpt: >-
   I wanted to set up a small website with my contact information and a blog
   where I could document my work. I also needed to brush up on frontend
