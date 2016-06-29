@@ -435,12 +435,17 @@ body {
 
 html,
 body {
-	height: calc(100vh - 3.5ch);
 	overflow-x: hidden;
 }
 
-.outer,
-.main-and-sidenav,
+.outer {
+	height: calc(100vh - 3.5ch);
+}
+
+.main-and-sidenav {
+	height: 100%;
+}
+
 main {
 	height: 100%;
 }
