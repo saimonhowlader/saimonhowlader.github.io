@@ -1,12 +1,12 @@
 ---
 published: true
 layout: post
-title: Launching a personal website, part 1
+title: 'Launching a personal website, part 1'
 excerpt: >-
-  I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
+  I wanted to set up a small website with my contact information and a blog
+  where I could document my work. I also needed to brush up on frontend
+  languages (html, css, javascript).
 ---
-# Launching a personal website, part 1
-
 ## Preface: 
 I bought a personal domain last summer and I wasn't doing anything with it; I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
 
@@ -39,4 +39,4 @@ These generators use the same strategy as WordPress, they use a given template t
 
 ### Can I do all this from a Chromebook?
 
-It would probably be messy. When I was first introduced to static site generators I was looking at HUGO- a generator built with the Go langauge. It is supposed to be the fastest compiler so it was my first instinct. But then I read about Jekyll, and while it is supposed to be slower, it is also integrated with GitHub Pages. GitHub Pages is basically a service that allows GitHub respositories to act as a typical webhost. And it's free! Now what this means is that once you upload your partials and all the Jekyll files GitHub does all of the heavy lifting and compiles the entire website behind the scenes, and then hosts the resulting files. And since all you need to access GitHub is a browser this meant that I could edit partials and css files if I ever needed to, right from my Chromebook, without any need for a terminal or text editor. 
+It would probably be messy. When I was first introduced to static site generators I was looking at HUGO- a generator built with the Go langauge. It is supposed to be the fastest compiler so it was my first instinct. But then I read about Jekyll, and while it is supposed to be slower, it is also integrated with GitHub Pages. GitHub Pages is basically a service that allows GitHub respositories to act as a typical webhost. And it's free! Now what this means is that once you upload your partials and all the Jekyll files GitHub does all of the heavy lifting and compiles the entire website behind the scenes, and then hosts the resulting files. And since all you need to access GitHub is a browser this meant that I could edit partials and css files if I ever needed to, right from my Chromebook, without any need for a terminal or text editor.
