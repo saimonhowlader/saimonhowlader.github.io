@@ -8,6 +8,7 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ![51RKMB9ZVJL.jpg]({{site.baseurl}}/_posts/51RKMB9ZVJL.jpg)
+![51RKMB9ZVJL.jpg]({{site.baseurl}}/_posts/51RKMB9ZVJL.jpg)
 
 #### Preface: 
 I bought a personal domain last summer and I wasn't doing anything with it; I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
