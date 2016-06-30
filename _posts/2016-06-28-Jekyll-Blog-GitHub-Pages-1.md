@@ -8,21 +8,19 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I purchased a personal domain name last summer and I wasn't doing ; I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
+I purchased a personal domain name last summer and I wasn't doing with; I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
 
 ### Requirements:
 I started with a list of things I wanted to accomplish in this project.
 
-1. minimalist/brutalist design
-1. zero javascript unless absolutely neccessary
-1. study best practices and semantic html (no div soup)
-1. a simple frontpage with contact info
-1. blog homepage with a list of posts
-1. clean and simple blog post design and layout
-1. fluid design (a step up from responsive grids)
-1. easy to add content from a vanilla Chromebook
-
-
+- minimalist/brutalist design
+- zero javascript unless absolutely neccessary
+- study best practices and semantic html (no div soup)
+- a simple frontpage with contact info
+- blog homepage with a list of posts
+- clean and simple blog post design and layout
+- fluid design (a step up from responsive grids)
+- easy to add content from a vanilla Chromebook
 
 
 ### The solution: Jekyll + Github
