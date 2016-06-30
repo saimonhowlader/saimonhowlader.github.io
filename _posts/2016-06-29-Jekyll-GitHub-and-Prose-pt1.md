@@ -8,7 +8,11 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
+I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on vari  
+  
+    
+      
+      ous projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
 
 ### Requirements:
 
