@@ -12,6 +12,7 @@ I purchased a personal domain name last summer and I wasn't doing ; I wanted to 
 
 ### Requirements:
 I started with a list of things I wanted to accomplish in this project.
+
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
 - study best practices and semantic html (no div soup)
@@ -20,6 +21,8 @@ I started with a list of things I wanted to accomplish in this project.
 - clean and simple blog post design and layout
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
+
+
 
 ### The solution: Jekyll + Github
 My biggest concern was making sure I could add content from my Chromebook and that I wouldn't have to code an entire page everytime I wanted to add a blog post. With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a nice looking theme and just start writing, it is also very bloated and slow.
