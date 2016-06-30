@@ -8,11 +8,14 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I purchased a personal domain name last summer and I wasn't doing with; I wanted to set up a small website with my contact information and a blog where I could document my work. I also needed to brush up on frontend languages (html, css, javascript).
 
-### Requirements:
+
+A few months ago, I wanted to create a simple website, a page with my contact information, and a simple blog where I could keep documentation for projects that I'd work on. My current set up is a desktop computer that I use for web developement, and a Chromebook for school. As far as general writing goes I prefer my Chromebook since it's easier for me to write away from a desk.
+
+
+
 I started with a list of things I wanted to accomplish in this project.
-
+### Requirements:
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
 - study best practices and semantic html (no div soup)
@@ -24,7 +27,10 @@ I started with a list of things I wanted to accomplish in this project.
 
 
 ### The solution: Jekyll + Github
-My biggest concern was making sure I could add content from my Chromebook and that I wouldn't have to code an entire page everytime I wanted to add a blog post. With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a nice looking theme and just start writing, it is also very bloated and slow.
+My current set up is a desktop computer that I use for web developement, and a Chromebook for school work. I like to do general writing away from my desk so for this 
+
+
+I like to use my desktop for web developement and my Chromebook for schoolwork and general wrtiting. So, for this project my biggest concern was making sure that I'd be able to make posts from my  I prefer doing web development work on the desktop and general writing on the Chromebook. For this project, my biggest concern was making sure that I would be able to make posts from a Vanilla Chromebook and that I wouldn't have to code an entire page everytime I wanted to add a blog post. With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a nice looking theme and just start writing, it is also very bloated and slow.
 
 ## WordPress vs static sites
 A typical web page has multiple sections. Some of these sections don't change, such as the navigation bar, the footer area, and the sidebar, these sections are static. Other sections such as the area where a blog post is displayed change depending on the blog post being requested, they are dynamic. Since most sections on a page are static WordPress themes break each section into what's commonly referred to as partials. When a visitor requests to see a post, WordPress essentially looks at a template that tells it which partials to grab, along with the dynamic content, and where to place them on the output html file that the visitor eventually recieves.
