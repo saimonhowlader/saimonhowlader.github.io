@@ -8,11 +8,9 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various pro  
-jects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.  
+I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
 
-
-### Requirements:  
+### Requirements:
 
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
@@ -23,7 +21,7 @@ jects. I need a setup that allows me to publish posts from a vanilla Chromebook.
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
 
-## Sounds like WordPress!  
+## Sounds like WordPress!
 
 With these concerns in mind, most people recommend a tool such as WordPress. After playing with WordPress for a few weeks I find that it as an all purpose solution it is pretty bloated, a security nightmare, and requires a lot of maintenance. It's pretty easy to set up for the first time, and it doesn't require much work to develope a theme from scratch, nevertheless it lacks in every other area. I've recently learned about static websites. They are faster, much more reliable and through a proper setup they fulfill every single one of my requirements.
 
@@ -32,6 +30,8 @@ With these concerns in mind, most people recommend a tool such as WordPress. Aft
 ### How WordPress works
 
 A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, some examples are navigation bars, footer sections, and sidebars. Dynamic sections vary based on the content being requested by a visitor. An example would be the section where a blog post is displayed.
+
+
 
 WordPress works by splitting up static sections into reusable pieces that can be used by templates. These templates instruct which pieces should be used and where to place them on a page. Each page in a website is assigned a template. A frontpage template might request a navigation bar, a sidebar, and a footer. Since typical blog posts only vary in their content, they might all use the same template that requests a footer and sidebar. As for the actual posts, WordPress keeps them in a database and pull them based on whatever request is made by a visitor. 
 
