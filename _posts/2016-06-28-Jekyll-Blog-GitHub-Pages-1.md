@@ -29,6 +29,7 @@ With these concerns in mind, most people would recommend a tool such as WordPres
 
 ## WordPress vs static sites
 ### How WordPress works
+
 A typical web page has multiple sections. Some of these sections don't change, such as the navigation bar, the footer area, and the sidebar, these sections are static. Other sections such as the area where a blog post is displayed change depending on the blog post being requested, they are dynamic. Since most sections on a page are static WordPress themes break each section into what's commonly known as partials. When a visitor requests to see a post, WordPress essentially looks at a template that tells it which partials to grab, along with the dynamic content, and where to place them on the output html file that the visitor eventually recieves.
 
 ### Example?
