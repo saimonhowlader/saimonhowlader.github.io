@@ -39,7 +39,7 @@ Suppose Stan clicks the post "My great adventure day 22." The WordPress program 
 ### So how are static sites better?
 Static websites have their limitations. For one, you can't really integrate your site with a database, which in turn means no shopping carts, or personalized viewing expieriences. A typical blog, however, doesn't need any of those features. However, this also means you can't store your blog posts in a database. This means that every single blog post is its own html document right from the start. A publisher would essentially upload a seperate html document for every single post and rewrite the header, footer, and sidebar code every single time. But at least the server wouldn't have to spend resources putting a website together, which means it'll be faster. 
 
-### Sounds medieval
+## Sounds medieval
 With this solution, the first concern is undoubtedly whether or not there is a way around having to do all that cutting and pasting manually. And thats where static site generators come in.
 
 These generators use the same strategy as WordPress, all I have to do is essentially give it a template, some reusable sections and a folder with my blog posts. Instead of a database, a folder is all that's needed. The biggest difference however is that with this process I have to run the compiler on my computer and then upload the resulting html files onto a web host. Since the web host, or server doesnt have to do any compiling it can just focus on delivering webpages to a visitor. 
