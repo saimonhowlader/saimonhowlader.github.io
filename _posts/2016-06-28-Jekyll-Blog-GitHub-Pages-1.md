@@ -23,13 +23,13 @@ I started with a list of things I wanted to accomplish in this project.
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
 
-## Sounds like WordPress!
+##Sounds like WordPress!
 
 With these concerns in mind, most people would recommend a tool such as WordPress. I actually played with WordPress for a few weeks and although it was prety easy to set up, and design my own theme, I ultimately found that WordPress was bloated, a security nightmare, and required a lot of maintenance. I also realized that if I ever needed to make small CSS edits from my Chromebook I would have to jump through a bunch of hoops. It had a simple interface for adding content, but aside from that, the program lacked in every other area. Around the same time I was becoming frustrated with WordPress I learned about static websites.
 
 
-## WordPress vs static sites
-### How WordPress works
+##WordPress vs static sites
+###How WordPress works
 
 A typical web page has multiple sections. Some of these sections don't change, such as the navigation bar, the footer area, and the sidebar, these sections are static. Other sections such as the area where a blog post is displayed change depending on the blog post being requested, they are dynamic. Since most sections on a page are static WordPress themes break each section into what's commonly known as partials. When a visitor requests to see a post, WordPress essentially looks at a template that tells it which partials to grab, along with the dynamic content, and where to place them on the output html file that the visitor eventually recieves.
 
