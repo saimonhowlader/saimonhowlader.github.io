@@ -8,43 +8,41 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-A few months ago, I wanted to create a simple website, a page with my contact information, and a simple blog to document my progress as I worked on various projects. I currently use a desktop computer for web developement, and a Chromebook for school. For the most part it is pretty inconvenient to do any sort of coding from a Chromebook, but for general writing, it's very enjoyable. And so, for this project my biggest concern was making sure that I would be able to publish posts from a Vanilla Chromebook without having to code an entire page everytime I wanted to write a blog post.
-
-I started with a list of things I wanted to accomplish in this project.
+I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
 
 ### Requirements:
 
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
-- study best practices and semantic html (no div soup)
-- a simple frontpage with contact info
-- blog homepage with a list of posts
-- clean and simple blog post design and layout
+- semantically correct html (no div soup)
+- frontpage with contact info
+- blog page with a list of posts
+- clean blog post design
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
 
 ## Sounds like WordPress!
 
-With these concerns in mind, most people would recommend a tool such as WordPress. I actually played with WordPress for a few weeks and although it was prety easy to set up, and design my own theme, I ultimately found that WordPress was bloated, a security nightmare, and required a lot of maintenance. I also realized that if I ever needed to make small CSS edits from my Chromebook I would have to jump through a bunch of hoops. It had a simple interface for adding content, but aside from that, the program lacked in every other area. Around the same time I was becoming frustrated with WordPress I learned about static websites.
+With these concerns in mind, most people recommend a tool such as WordPress. After playing with WordPress for a few weeks I find that it as an all purpose solution it is pretty bloated, a security nightmare, and requires a lot of maintenance. It's pretty easy to set up for the first time, and it doesn't require much work to develope a theme from scratch, nevertheless it lacks in every other area. I've recently learned about static websites. They are faster, much more reliable and through a proper setup they fulfill every single one of my requirements.
 
 ## WordPress vs static sites
 
 ### How WordPress works
 
-A typical web page has multiple sections. Some of these sections don't change, such as the navigation bar, the footer area, and the sidebar, these sections are static. Other sections such as the area where a blog post is displayed change depending on the blog post being requested, they are dynamic. Since most sections on a page are static WordPress themes break each section into what's commonly known as partials. When a visitor requests to see a post, WordPress essentially looks at a template that tells it which partials to grab, along with the dynamic content, and where to place them on the output html file that the visitor eventually recieves.
+A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, some examples are navigation bars, footer sections, and sidebars. Dynamic sections vary based on the content being requested by a visitor. An example would be the section where a blog post is displayed.
+
+WordPress works by splitting up static sections into reusable pieces that can be used by templates. These templates instruct which pieces should be used and where to place them on a page. Each page in a website is assigned a template. A frontpage template might request a navigation bar, a sidebar, and a footer. Since typical blog posts only vary in their content, they might all use the same template that requests a footer and sidebar. As for the actual posts, WordPress keeps them in a database and pull them based on whatever request is made by a visitor. 
 
 ### Example?
-Suppose Stan clicks the post "My great adventure day 22." The WordPress program recieves a request to put together the entire page. WordPress looks at a given template that specifies which partials to use and where to place them and where to put the relevant dynamic content- which it grabs from a database of posts. After putting the pieces together, the program then delivers the page to the visitor. The visitor ofcourse  has no idea that the content was just put together because all he recieves is the final product. The issue, however, is that this whole process is slow, and relies on a lot of moving parts that also open up security vulnerabilities. Luckily there is an alternative, purely static websites. 
+Suppose Stan clicks the post "My great adventure day 22." The WordPress program recieves a request to put together the entire page. WordPress looks at the "blog post" template that specifies which navigation bar and sidebar to fetch, where to place them, and where to put the requested blog content- which it grabs from a database of posts. Under the instructions of the template, the program puts the pieces together and returns a finished html document to the visitor. The visitor ofcourse  has no idea that the content was put together because all he recieves is the final product. The issue, however, is that this whole process is slow, and relies on a lot of moving parts that also open up security vulnerabilities. The opposite of dynamic websites are static websites, which is actually an older technology.
 
-### What about static sites?
-Static websites have their limitations. For one, you can't really integrate your site with a database, which in turn means no shopping carts, or personalized viewing expieriences. A typical blog doesn't need these features and so for my project this was fine. A static website is delivered to visitors just as it was uploaded in the first place, the same html file, without any cutting and pasting. Static sites are much faster, and have fewer moving parts.
+### So how are static sites better?
+Static websites have their limitations. For one, you can't really integrate your site with a database, which in turn means no shopping carts, or personalized viewing expieriences. A typical blog, however, doesn't need any of those features. However, this also means you can't store your blog posts in a database. This means that every single blog post is its own html document right from the start. A publisher would essentially upload a seperate html document for every single post and rewrite the header, footer, and sidebar code every single time. But at least the server wouldn't have to spend resources putting a website together, which means it'll be faster. 
 
-## Concerns about static
+### Sounds medieval
+With this solution, the first concern is undoubtedly whether or not there is a way around having to do all that cutting and pasting manually. And thats where static site generators come in.
 
-Now, my first concern was whether or not using static sites would mean I'd have to do the cutting and pasting myself everytime I wanted to upload a blog post. And that's where static site generators came in.
+These generators use the same strategy as WordPress, all I have to do is essentially give it a template, some reusable sections and a folder with my blog posts. Instead of a database, a folder is all that's needed. The biggest difference however is that with this process I have to run the compiler on my computer and then upload the resulting html files onto a web host. Since the web host, or server doesnt have to do any compiling it can just focus on delivering webpages to a visitor. 
 
-These generators use the same strategy as WordPress, they use a given template to compile partials and dynamic content. The only difference is that this is done before the site is initially uploaded. What goes in is what comes out. The typical workflow involves using the terminal to take a bunch of pieces of html and then compiling them into a final html file which is then uploaded to the website. Essentially all the cutting and pasting that takes place behind the scenes with WordPress is taken care of by the author right before they upload.
-
-## Is this Chromebook friendly??
-
-It would probably be messy. When I was first introduced to static site generators I was looking at HUGO- a generator built with the Go langauge. It is supposed to be the fastest compiler so it was my first instinct. But then I read about Jekyll, and while it is supposed to be slower, it is also integrated with GitHub Pages. GitHub Pages is basically a service that allows GitHub respositories to act as a typical webhost. And it's free! Now what this means is that once you upload your partials and all the Jekyll files GitHub does all of the heavy lifting and compiles the entire website behind the scenes, and then hosts the resulting files. And since all you need to access GitHub is a browser this meant that I could edit partials and css files if I ever needed to, right from my Chromebook, without any need for a terminal or text editor.
+### Is this Chromebook friendly?
+Most static site generators work through a command line interface, or the terminal. Two of the most popular static site generators are HUGO and Jekyll. HUGO is apparently exponentially faster than Jekyll when it comes to compiling but Jekyll is in the unique position of being heavily integrated with GitHub. GitHub allows users to use a respository just like a typical web host. All I basically have to do is put Jekyll files in a repository and GitHub will automatically compile my files with Jekyll and then host the outputted html files to vistors on my website. And since all you need to access GitHub is a browser this means that I can edit css files if I ever need to, right from my Chromebook, without any need for a terminal or text editor. Any new post I want to add can basically be added as a text file and GitHub (with Jekyll in the background) will take care of it.
