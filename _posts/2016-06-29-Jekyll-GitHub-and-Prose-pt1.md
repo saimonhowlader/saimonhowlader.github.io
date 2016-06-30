@@ -8,9 +8,10 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
+I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.  
 
-### Requirements:
+
+### Requirements:  
 
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
@@ -21,7 +22,7 @@ I've recently decided to work on a simple website, a page with my contact inform
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
 
-## Sounds like WordPress!
+## Sounds like WordPress!  
 
 With these concerns in mind, most people recommend a tool such as WordPress. After playing with WordPress for a few weeks I find that it as an all purpose solution it is pretty bloated, a security nightmare, and requires a lot of maintenance. It's pretty easy to set up for the first time, and it doesn't require much work to develope a theme from scratch, nevertheless it lacks in every other area. I've recently learned about static websites. They are faster, much more reliable and through a proper setup they fulfill every single one of my requirements.
 
