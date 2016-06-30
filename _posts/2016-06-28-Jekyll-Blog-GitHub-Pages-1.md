@@ -24,6 +24,7 @@ I started with a list of things I wanted to accomplish in this project.
 - easy to add content from a vanilla Chromebook
 
 ## Sounds like WordPress!
+
 With these concerns in mind, most people would recommend a tool such as WordPress. I actually played with WordPress for a few weeks and although it was prety easy to set up, and design my own theme, I ultimately found that WordPress was bloated, a security nightmare, and required a lot of maintenance. I also realized that if I ever needed to make small CSS edits from my Chromebook I would have to jump through a bunch of hoops. It had a simple interface for adding content, but aside from that, the program lacked in every other area. Around the same time I was becoming frustrated with WordPress I learned about static websites.
 
 
