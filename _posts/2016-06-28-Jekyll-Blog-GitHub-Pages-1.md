@@ -11,6 +11,7 @@ excerpt: >-
 A few months ago, I wanted to create a simple website, a page with my contact information, and a simple blog where I could keep documentation for projects that I'd work on. My current set up is a desktop computer that I use for web developement, and a Chromebook for school. For the most part it is pretty inconvenient to do any sort of coding from a Chromebook, but for general writing, it's very enjoyable. And so, for this project my biggest concern was making sure that I would be able to publish posts from a Vanilla Chromebook without having to code an entire page everytime I wanted to write a blog post.
 
 I started with a list of things I wanted to accomplish in this project.
+
 ### Requirements:
 
 - minimalist/brutalist design
@@ -22,11 +23,7 @@ I started with a list of things I wanted to accomplish in this project.
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
 
-
-
-
-
-With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a pretty theme and just start writing, it is also very bloated and slow. And in the event I'd ever have to make minor stylesheet changes, I'd have to go through a bunch of hoops.
+With these concerns in mind, most people would recommend a tool such as WordPress. I played with WordPress for a few weeks and although it is prety easy to set up, and design my own theme, I ultimately found that WordPress requires a lot of maintenance, is bloated, slow and a security nightmare. I also realized that if I ever needed to make a small change to stylesheets from my Chromebook I would have to jump through a bunch of hoops. It had a simple interface for adding content, but aside from that the program lacked in other areas. 
 
 ### The solution: Jekyll + GitHub + Prose.io
 
