@@ -12,6 +12,7 @@ A few months ago, I wanted to create a simple website, a page with my contact in
 
 I started with a list of things I wanted to accomplish in this project.
 ### Requirements:
+
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
 - study best practices and semantic html (no div soup)
@@ -20,6 +21,8 @@ I started with a list of things I wanted to accomplish in this project.
 - clean and simple blog post design and layout
 - fluid design (a step up from responsive grids)
 - easy to add content from a vanilla Chromebook
+
+
 
 
 
