@@ -8,11 +8,7 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-
-
-A few months ago, I wanted to create a simple website, a page with my contact information, and a simple blog where I could keep documentation for projects that I'd work on. My current set up is a desktop computer that I use for web developement, and a Chromebook for school. As far as general writing goes I prefer my Chromebook since it's easier for me to write away from a desk.
-
-
+A few months ago, I wanted to create a simple website, a page with my contact information, and a simple blog where I could keep documentation for projects that I'd work on. My current set up is a desktop computer that I use for web developement, and a Chromebook for school. For the most part it is pretty inconvenient to do any sort of coding from a Chromebook, but for general writing, it's very enjoyable. And so, for this project my biggest concern was making sure that I would be able to publish posts from a Vanilla Chromebook without having to code an entire page everytime I wanted to write a blog post.
 
 I started with a list of things I wanted to accomplish in this project.
 ### Requirements:
@@ -26,11 +22,12 @@ I started with a list of things I wanted to accomplish in this project.
 - easy to add content from a vanilla Chromebook
 
 
-### The solution: Jekyll + Github
-My current set up is a desktop computer that I use for web developement, and a Chromebook for school work. I like to do general writing away from my desk so for this 
+
+With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a pretty theme and just start writing, it is also very bloated and slow. And in the event I'd ever have to make minor stylesheet changes, I'd have to go through a bunch of hoops.
+
+### The solution: Jekyll + GitHub + Prose.io
 
 
-I like to use my desktop for web developement and my Chromebook for schoolwork and general wrtiting. So, for this project my biggest concern was making sure that I'd be able to make posts from my  I prefer doing web development work on the desktop and general writing on the Chromebook. For this project, my biggest concern was making sure that I would be able to make posts from a Vanilla Chromebook and that I wouldn't have to code an entire page everytime I wanted to add a blog post. With these concerns in mind, most people would recommend a tool such as WordPress. And although WordPress makes it very easy to grab a nice looking theme and just start writing, it is also very bloated and slow.
 
 ## WordPress vs static sites
 A typical web page has multiple sections. Some of these sections don't change, such as the navigation bar, the footer area, and the sidebar, these sections are static. Other sections such as the area where a blog post is displayed change depending on the blog post being requested, they are dynamic. Since most sections on a page are static WordPress themes break each section into what's commonly referred to as partials. When a visitor requests to see a post, WordPress essentially looks at a template that tells it which partials to grab, along with the dynamic content, and where to place them on the output html file that the visitor eventually recieves.
