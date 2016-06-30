@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: First post!
+title: I Googled Myself
 excerpt: >-
   The primary purpose of this blog is to serve as documentation and as a way to
   organize my thoughts as I work on whatever project interests me at the moment.
