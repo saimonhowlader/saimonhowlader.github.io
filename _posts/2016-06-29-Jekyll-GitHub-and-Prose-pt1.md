@@ -12,7 +12,7 @@ I've recently decided to work on a simple website, a page with my contact inform
   
     
       
-      ous projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
+ous projects. I need a setup that allows me to publish posts from a vanilla Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
 
 ### Requirements:
 
