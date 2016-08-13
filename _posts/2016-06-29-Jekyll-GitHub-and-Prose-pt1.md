@@ -8,7 +8,7 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I need to make sure that when my name is googled that it appears as one of the top results. I figure the best way to acomplish that would be to create a simple website with a blog. I've also been meaning to start a blog to document my progress on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook and I don't want to mess with code everytime I want to publish a blog post.
+I needed to make sure that when my name is googled that it would appear as one of the top results. I figured the best way to acomplish that would be to create a simple website with a blog. I've also been meaning to start a blog to document my progress on various projects. I also wanted a no fuss setup that would allow me to publish posts from a Chromebook without any hacks.
 
 ### Requirements:
 - minimalist/brutalist design
@@ -19,22 +19,21 @@ I need to make sure that when my name is googled that it appears as one of the t
 
 ## Sounds like WordPress!
 
-With these concerns in mind, most people recommend a tool such as WordPress and so for about a month I've been playing with WordPress. It's pretty easy to set up for the first time, and it doesn't require much work to develop a theme from scratch, nevertheless I find that it is too bloated, a security nightmare, and requires a lot of maintenance.
+With these concerns in mind, most of my research pointed me towards WordPress. And since I didn't want to use someone else's theme I played with WordPress for a few weeks to learn its template system, some basic php, and how to make themes. It was pretty easy to set up for the first time, and it didn't require much work to develop a theme from scratch, nevertheless I found that it was too bloated, a security nightmare, and required a lot of maintenance.
 
-I've recently learned about static websites. They are faster, much more reliable, secure, and through a proper setup they fulfill every single one of my requirements.
+Around the same time I also found out about static site generators amd from what I could gather it was perfect for blogs; they are faster, more reliable, and more secure, but they require a bit more work to set up for the first time.
 
 ## WordPress vs static sites
 
 ### How WordPress works
 
-A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, some examples are navigation bars, footer sections, and sidebars. Dynamic sections vary based on the content being requested by a visitor. An example would be the section where a blog post is displayed.
+A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, such as navigation bars, footer sections, and sidebars. Dynamic sections display different content based on what's being requested by a visitor; an example would be the actual blog post. 
 
+Both WordPress and static site generators essentially use the same strategy to display websites. They first seperate all the static and dynamic sections of a website. Using a blog as an example the front page and a blog post would typically use the same navigation bar, header, and footer. These three sections could be saved as seperate files such as navBar.html, header.html, and footer.html. The dynamic content such as the actual post with the title and body would be saved in a database (WordPress) or even just a simple folder (static site generators). Both technologies also use templates, or instruction documents that state which static files to wrap around some dynamic content. A template for the frontpage of a website could have lines of code that calls the header.html, navBar.html and footer.html and then the program would glue the pieces together and export a single html file such as index.html. A template for a blog post however might have instructions to get navBar.html, footer.html, commentSection.html, sideBar.html, and an instruction to grab the requested blog post from a database or folder. 
 
-
-WordPress works by splitting up static sections into reusable pieces that can be used by templates. These templates instruct which pieces should be used and where to place them on a page. Each page in a website is assigned a template. A frontpage template might request a navigation bar, a sidebar, and a footer. Since typical blog posts only vary in their content, they might all use the same template that requests a footer and sidebar. As for the actual posts, WordPress keeps them in a database and pull them based on whatever request is made by a visitor. 
 
 ### Example?
-Suppose Stan clicks the post "My great adventure day 22." The WordPress program recieves a request to put together the entire page. WordPress looks at the "blog post" template that specifies which navigation bar and sidebar to fetch, where to place them, and where to put the requested blog content- which it grabs from a database of posts. Under the instructions of the template, the program puts the pieces together and returns a finished html document to the visitor. The visitor ofcourse  has no idea that the content was put together because all he recieves is the final product. The issue, however, is that this whole process is slow, and relies on a lot of moving parts that also open up security vulnerabilities. The opposite of dynamic websites are static websites, which is actually an older technology.
+Suppose Stan clicks the post "My great adventure day 22." The WordPress program recieves a request to put together the entire page. WordPress looks at the "blog post" template that specifies which navigation bar and sidebar to fetch, where to place them, and where to put the requested blog content- which it grabs from a database of posts. Under the instructions of the template, the program puts the pieces together and returns a finished html document to the visitor. The visitor however has no idea that the content was just put together because all he recieves is the final product. The issue, however, is that this whole process is slow, and relies on a lot of moving parts that also open up security vulnerabilities. The opposite of dynamic websites are static websites, which is actually an older technology.
 
 ### So how are static sites better?
 Static websites have their limitations. For one, you can't really integrate your site with a database, which in turn means no shopping carts, or personalized viewing expieriences. A typical blog, however, doesn't need any of those features. However, this also means you can't store your blog posts in a database. This means that every single blog post is its own html document right from the start. A publisher would essentially upload a seperate html document for every single post and rewrite the header, footer, and sidebar code every single time. But at least the server wouldn't have to spend resources putting a website together, which means it'll be faster. 
