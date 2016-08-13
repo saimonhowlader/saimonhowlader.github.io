@@ -8,22 +8,20 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I've recently decided to work on a simple website, a page with my contact information, and a blog to document my progress as I work on various projects. I need a setup that allows me to publish posts from a Chromebook. I want to focus on writing and I don't want to mess with code everytime I want to publish a blog post.
+I need to make sure that when my name is googled that it appears as one of the top results. I figure the best way to acomplish that would be to create a simple website with a blog. I've also been meaning to start a blog to document my progress on various projects. I need a setup that allows me to publish posts from a vanilla Chromebook and I don't want to mess with code everytime I want to publish a blog post.
 
 ### Requirements:
-
 - minimalist/brutalist design
 - zero javascript unless absolutely neccessary
-- semantically correct html (no div soup)
 - frontpage with contact info
 - blog page with a list of posts
-- clean blog post design
 - fluid design (a step up from responsive grids)
-- easy to add content from a vanilla Chromebook
 
 ## Sounds like WordPress!
 
-With these concerns in mind, most people recommend a tool such as WordPress. After playing with WordPress for a few weeks I find that it as an all purpose solution it is pretty bloated, a security nightmare, and requires a lot of maintenance. It's pretty easy to set up for the first time, and it doesn't require much work to develope a theme from scratch, nevertheless it lacks in every other area. I've recently learned about static websites. They are faster, much more reliable and through a proper setup they fulfill every single one of my requirements.
+With these concerns in mind, most people recommend a tool such as WordPress and so for about a month I've been playing with WordPress. It's pretty easy to set up for the first time, and it doesn't require much work to develop a theme from scratch, nevertheless I find that it is too bloated, a security nightmare, and requires a lot of maintenance.
+
+I've recently learned about static websites. They are faster, much more reliable, secure, and through a proper setup they fulfill every single one of my requirements.
 
 ## WordPress vs static sites
 
@@ -49,4 +47,4 @@ These generators use the same strategy as WordPress, all I have to do is essenti
 ### Is this Chromebook friendly?
 Most static site generators work through a command line interface, or the terminal. Two of the most popular static site generators are HUGO and Jekyll. HUGO is apparently exponentially faster than Jekyll when it comes to compiling but Jekyll is in the unique position of being heavily integrated with GitHub. GitHub allows users to use a respository just like a typical web host. All I basically have to do is put Jekyll files in a repository and GitHub will automatically compile my files with Jekyll and then host the outputted html files to vistors on my website. And since all you need to access GitHub is a browser this means that I can edit css files if I ever need to, right from my Chromebook, without any need for a terminal or text editor. Any new post I want to add can basically be added as a text file and GitHub (with Jekyll in the background) will take care of it.
 
-Instead of going to GitHub to manage posts, I'm going to use Prose.io to write my posts. It integrates with GitHub and allows you to edit files and write new files. Since GitHUb suports Markdown, this is the perfect tool. 
+Instead of going to GitHub to manage posts, I'm going to use Prose.io to write my posts. It integrates with GitHub and allows you to edit files and write new files. Since GitHUb suports Markdown, this is the perfect tool.
