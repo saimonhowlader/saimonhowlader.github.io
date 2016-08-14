@@ -8,28 +8,28 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Preface: 
-I needed to make sure that when my name is googled that it would appear as one of the top results. I figured the best way to acomplish that would be to create a simple website with a blog. I've also been meaning to start a blog to document my progress on various projects. I also wanted a no fuss setup that would allow me to publish posts from a Chromebook without any hacks.
+I wanted to build a website from scratch to display my contact info and publish blog posts to document my progress on various projects. I also wanted a no fuss setup that would allow me to publish posts from a Chromebook without any hacks.
 
 ### Requirements:
 - minimalist/brutalist design
-- zero javascript unless absolutely neccessary
+- javascript-free (only HTML and CSS)
 - frontpage with contact info
 - blog page with a list of posts
-- fluid design (a step up from responsive grids)
+- fluid design (not a responsive grid)
 
-## Sounds like WordPress!
+## WordPress?
 
-With these concerns in mind, most of my research pointed me towards WordPress. And since I didn't want to use someone else's theme I played with WordPress for a few weeks to learn its template system, some basic php, and how to make themes. It was pretty easy to set up for the first time, and it didn't require much work to develop a theme from scratch, nevertheless I found that it was too bloated, a security nightmare, and required a lot of maintenance.
+My first instinct was to use WordPress; just about every article on blogging seems to recommend it. Since I wanted to build as much from scratch I had to spend a few weeks learning how to build a theme from scratch, how to use WordPress' template system, and some basic PHP. However, around that same time, I started reading about static site generators (SSGs) and found that there were better than WordPress for blogging. 
 
-Around the same time I also found out about static site generators amd from what I could gather it was perfect for blogs; they are faster, more reliable, and more secure, but they require a bit more work to set up for the first time.
+From my intiial research, blogs made with SSGs, when compared to WordPress, are faster, more secure, and require much less maintenance.
 
 ## WordPress vs static sites
+Luckily for me, most of the things I learned about WordPress' templating and theming strategy were applicable to popular static site generators. 
 
-### How WordPress works
+### Templates
+A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, such as navigation bars, footer sections, and sidebars. Dynamic sections display different content based on what's being requested by a visitor; an example would be a blog post. 
 
-A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, such as navigation bars, footer sections, and sidebars. Dynamic sections display different content based on what's being requested by a visitor; an example would be the actual blog post. 
-
-Both WordPress and static site generators essentially use the same strategy to display websites. They first seperate all the static and dynamic sections of a website. Using a blog as an example the front page and a blog post would typically use the same navigation bar, header, and footer. These three sections could be saved as seperate files such as navBar.html, header.html, and footer.html. The dynamic content such as the actual post with the title and body would be saved in a database (WordPress) or even just a simple folder (static site generators). Both technologies also use templates, or instruction documents that state which static files to wrap around some dynamic content. A template for the frontpage of a website could have lines of code that calls the header.html, navBar.html and footer.html and then the program would glue the pieces together and export a single html file such as index.html. A template for a blog post however might have instructions to get navBar.html, footer.html, commentSection.html, sideBar.html, and an instruction to grab the requested blog post from a database or folder. 
+Both WordPress and static site generators essentially use the same strategy to display websites. They first seperate all the static and dynamic sections of a website. Using a blog as an example the front page and a blog post would typically use the same navigation bar, header, and footer. These three sections could be saved as seperate files such as navBar.html, header.html, and footer.html. The dynamic content such as the actual post with the title and body would be saved in a database (WordPress) or even just a simple folder (static site generators). Both technologies also use templates, or instruction documents that state which static files to wrap around some dynamic content. A template for the frontpage of a website would have code that calls the header.html, navBar.html and footer.html and then the program would glue the pieces together and export a single html file such as index.html. A template for a blog post however might have instructions to get navBar.html, footer.html, commentSection.html, sideBar.html, and an instruction to grab the requested blog post from a database or folder. 
 
 
 ### Example?
