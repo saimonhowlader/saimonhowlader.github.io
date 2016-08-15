@@ -7,11 +7,20 @@ excerpt: >-
   where I could document my work. I also needed to brush up on frontend
   languages (html, css, javascript).
 ---
-### Requirements:
-I want to build a website from scratch that is as light as possible and shows up at the top of search results when my name is googled. The overall design should be clean, follow a brutalist aesthetic, and be fluid on every device. In order to keep it light and fast there shouldn't be any Javascript, unless it's absolutly neccesarry. It needs to have a page for my contact information and a blog.
+### Background:
+I want to have better control over what shows up when my name is googled. I've gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up. 
 
-0## WordPress?
+### Requirements
+-built from scratch, no frameworks
+-clean, minimalist, brutalist aesthetic
+-fluid typography and flow on every device (better than responsive design)
+-zero Javascript unless it's absolutly neccesarry
+-frontpage for my contact information
+-blog page listing all of my posts
+-comments sections under each post
 
+## General plan 
+Since this will be a very basic website I'm going to use Jekyll and host it for free on GitHub. WordPress would definitely be easier, and faster to set up, but it's too bloated and a bit overkill for my needs since I don't need to use a database for anything. 
 My first instinct was to use WordPress; just about every article on blogging seems to recommend it. Since I wanted to build as much from scratch I had to spend a few weeks learning how to build a theme from scratch, how to use WordPress' template system, and some basic PHP. However, around that same time, I started reading about static site generators (SSGs) and found that there were better than WordPress for blogging. 
 
 From my intiial research, blogs made with SSGs, when compared to WordPress, are faster, more secure, and require much less maintenance.
