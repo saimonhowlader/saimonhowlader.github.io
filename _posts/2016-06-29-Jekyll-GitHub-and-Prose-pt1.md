@@ -7,17 +7,10 @@ excerpt: >-
   where I could document my work. I also needed to brush up on frontend
   languages (html, css, javascript).
 ---
-### Preface: 
-I wanted to build a website from scratch to display my contact info and publish blog posts to document my progress on various projects. I also wanted a no fuss setup that would allow me to publish posts from a Chromebook without any hacks.
-
 ### Requirements:
-- minimalist/brutalist design
-- javascript-free (only HTML and CSS)
-- frontpage with contact info
-- blog page with a list of posts
-- fluid design (not a responsive grid)
+I want to build a website from scratch that is as light as possible and shows up at the top of search results when my name is googled. The overall design should be clean, follow a brutalist aesthetic, and be fluid on every device. In order to keep it light and fast there shouldn't be any Javascript, unless it's absolutly neccesarry. It needs to have a page for my contact information and a blog.
 
-## WordPress?
+0## WordPress?
 
 My first instinct was to use WordPress; just about every article on blogging seems to recommend it. Since I wanted to build as much from scratch I had to spend a few weeks learning how to build a theme from scratch, how to use WordPress' template system, and some basic PHP. However, around that same time, I started reading about static site generators (SSGs) and found that there were better than WordPress for blogging. 
 
