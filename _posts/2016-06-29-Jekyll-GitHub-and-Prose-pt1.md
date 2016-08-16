@@ -8,15 +8,21 @@ excerpt: >-
   languages (html, css, javascript).
 ---
 ### Background:
-I want to have better control over what shows up when my name is googled. I've gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up. 
+I want to have better control over what shows up when my name is googled. I’ve gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up.
 
 ### Requirements
 -built from scratch, no frameworks
+
 -clean, minimalist, brutalist aesthetic
+
 -fluid typography and flow on every device (better than responsive design)
+
 -zero Javascript unless it's absolutly neccesarry
+
 -frontpage for my contact information
+
 -blog page listing all of my posts
+
 -comments sections under each post
 
 ## General plan 
