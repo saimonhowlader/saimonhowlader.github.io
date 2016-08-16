@@ -20,7 +20,11 @@ I want to have better control over what shows up when my name is googled. I've g
 -comments sections under each post
 
 ## General plan 
-Since this will be a very basic website I'm going to use Jekyll and host it for free on GitHub. WordPress would definitely be easier, and faster to set up, but it's too bloated and a bit overkill for my needs since I don't need to use a database for anything. 
+I'm going to use Jekyll and GitHub to build and host my website. For a simple blogging website I don't need to rely on a database or any backend programming so I don't need to use a CMS such as WordPress or a typical server to host my files. 
+
+The reason I'm not using WordPress is because it's unnecesarry and I don't really like it. The biggest advantages of using WordPress are that it makes it easy to work with a database, and that it is quick to set up. This website, however, has no need to work with a database. WordPress websites are also generally slower than they should be, and because the program tries to be a jack of all trades it's relatively bloated. It's also known for being a huge target for hackers and overall it is a security nightmare. erkill.  It's also a security nightmare and due to the fact that it tries to be an all purpose tool it's too bloated.
+
+
 My first instinct was to use WordPress; just about every article on blogging seems to recommend it. Since I wanted to build as much from scratch I had to spend a few weeks learning how to build a theme from scratch, how to use WordPress' template system, and some basic PHP. However, around that same time, I started reading about static site generators (SSGs) and found that there were better than WordPress for blogging. 
 
 From my intiial research, blogs made with SSGs, when compared to WordPress, are faster, more secure, and require much less maintenance.
