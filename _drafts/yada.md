@@ -1,6 +1,8 @@
 ---
-published: false
+title: Yada
+date: 2016-06-28 00:00:00 Z
 ---
+
 # Launching a personal website
 
 ## Preface: 

@@ -1,12 +1,12 @@
 ---
-published: true
+title: Jekyll, GitHub, and Prose pt1
+date: 2016-06-29 00:00:00 Z
 layout: post
-title: 'Jekyll, GitHub, and Prose pt1'
-excerpt: >-
-  I wanted to set up a small website with my contact information and a blog
-  where I could document my work. I also needed to brush up on frontend
-  languages (html, css, javascript).
+excerpt: I wanted to set up a small website with my contact information and a blog
+  where I could document my work. I also needed to brush up on frontend languages
+  (html, css, javascript).
 ---
+
 ### Background:
 I want to have better control over what shows up when my name is googled. I’ve gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up.
 

@@ -1,13 +1,12 @@
 ---
-published: true
-layout: post
 title: I Googled Myself
-excerpt: >-
-  The best way to make sure that your name appears at the top of Google search
-  results is to create some social networking accounts, and a website with good
-  SEO that is regularly updated with new content- such as a blog. And so, here
-  we are.
+date: 2016-08-12 00:00:00 Z
+layout: post
+excerpt: The best way to make sure that your name appears at the top of Google search
+  results is to create some social networking accounts, and a website with good SEO
+  that is regularly updated with new content- such as a blog. And so, here we are.
 ---
+
 Because my name is relatively uncommon, search engines have very little trouble finding every single social networking account associated with my name. Until recently, the first few pages of search results were littered with links to my Facebook, Spotify and YouTube playlists, ASKfm questions (throwback!), obscure forums, non-sensible comments, posts, pictures and political opinions.
 
 People with more common names and conventional spellings are typically hidden amongst others who share their name, buried deep within search results, and essentially invisble. However, for people with more ethnic names, and liberal spellings, the first page of Google search results can be a cringe inducing reminder of middle school.
