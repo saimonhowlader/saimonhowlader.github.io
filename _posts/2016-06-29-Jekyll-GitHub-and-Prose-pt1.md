@@ -1,10 +1,12 @@
 ---
-title: Jekyll, GitHub, and Prose pt1
-date: 2016-06-29 00:00:00 Z
+title: 'Jekyll, GitHub, and Prose pt1'
+date: {}
 layout: post
-excerpt: I wanted to set up a small website with my contact information and a blog
-  where I could document my work. I also needed to brush up on frontend languages
-  (html, css, javascript).
+excerpt: >-
+  I wanted to set up a small website with my contact information and a blog
+  where I could document my work. I also needed to brush up on frontend
+  languages (html, css, javascript).
+published: true
 ---
 
 ### Background:
