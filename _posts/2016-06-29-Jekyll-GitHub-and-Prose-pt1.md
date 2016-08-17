@@ -10,20 +10,12 @@ published: true
 ---
 
 ### Background:
-wccI want to have better control over what shows up when my name is googled. I’ve gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up.
+When my name is googled I want to make sure that I am at the very top instead of some other people who share my name. In order to do that I need to set up a website that has great SEO, is fast, and is regularly updated-- such as a blog.
 
-
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-
-### Requirements
+Requirements
 -built from scratch, no frameworks
 
--clean, minimalist, brutalist aesthetic
+-clean/minimalist/brutalist aesthetic
 
 -fluid typography and flow on every device (better than responsive design)
 
@@ -33,18 +25,32 @@ end
 
 -blog page listing all of my posts
 
--comments sections under each post
+-comments section under each post
+
 
 ## General plan 
-I'm going to use Jekyll to build the website and GitHub to host it. Hosting with GitHub is free, but it's features are somewhat limitted compared to the features of a typical hosting service such as being able to run a program in the backend, or hold comments and posts in a database. However, for this project none of those features are actually neccesarry. For comments I'm going to use Disqus since it has a familar interface, and as for posts Jekyll allows users to keep blog posts in a folder within a GitHub repository. 
+I'm going to use Jekyll to build the website and GitHub Pages to host it. Hosting with GitHub is free, but it's features are somewhat limitted compared to the features of a typical hosting service. I won't be able to run programs in the background, or use a database to store comments and posts, however, for this project none of those features are actually neccesarry. For comments I'm going to use Disqus since it has a familar interface. And for posts, Jekyll allows users to keep blog posts in a folder within a GitHub repository. I'm going to use Prose.io to write posts since it has good integration with GitHub, but after this project I hope to make a CMS of my own to manage Jekyll. 
 
-{% highlight ruby %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+### Steps:
+1. Make an outline of the different pages in the website
 
+2. Write the HTML and CSS for each page
 
+3. Make the website's layout, and typography fluid (similar to responsive, but better)
+
+4. Split the HTML files into components that will be reused on every page
+
+5. Set up a GitHub respository with folders and empty files
+
+6. Make templates that instruct which components to use when generating a page
+
+7. Insert the commenting system
+
+8. Set up the custom domain and email forwarding
+
+9. Add a favicon
+
+10. Add styling for special Jekyll code such as syntax highlighting for code, and time and date
 
 
 ## WordPress vs static sites
