@@ -11,6 +11,14 @@ published: true
 ### Background:
 I want to have better control over what shows up when my name is googled. I’ve gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up.
 
+
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+
 ### Requirements
 -built from scratch, no frameworks
 
