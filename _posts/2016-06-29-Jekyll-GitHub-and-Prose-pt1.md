@@ -8,7 +8,6 @@ excerpt: >-
   languages (html, css, javascript).
 published: true
 ---
-
 ### Background:
 I want to have better control over what shows up when my name is googled. I’ve gone back and looked at just about every single account associated with my name and either changed their privacy settings or deleted them. The next part of the process is to get a website up that is regularly updated and has good SEO so that it shows up as the first result whenever my name is searched up.
 
@@ -28,14 +27,16 @@ I want to have better control over what shows up when my name is googled. I’ve
 -comments sections under each post
 
 ## General plan 
-I'm going to use Jekyll and GitHub to build and host my website. For a simple blogging website I don't need to rely on a database or any backend programming so I don't need to use a CMS such as WordPress or a typical server to host my files. 
+I'm going to use Jekyll to build the website and GitHub to host it. Hosting with GitHub is free, but it's features are somewhat limitted compared to the features of a typical hosting service such as being able to run a program in the backend, or hold comments and posts in a database. However, for this project none of those features are actually neccesarry. For comments I'm going to use Disqus since it has a familar interface, and as for posts Jekyll allows users to keep blog posts in a folder within a GitHub repository. 
 
-The reason I'm not using WordPress is because it's unnecesarry and I don't really like it. The biggest advantages of using WordPress are that it makes it easy to work with a database, and that it is quick to set up. This website, however, has no need to work with a database. WordPress websites are also generally slower than they should be, and because the program tries to be a jack of all trades it's relatively bloated. It's also known for being a huge target for hackers and overall it is a security nightmare. erkill.  It's also a security nightmare and due to the fact that it tries to be an all purpose tool it's too bloated.
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 
-My first instinct was to use WordPress; just about every article on blogging seems to recommend it. Since I wanted to build as much from scratch I had to spend a few weeks learning how to build a theme from scratch, how to use WordPress' template system, and some basic PHP. However, around that same time, I started reading about static site generators (SSGs) and found that there were better than WordPress for blogging. 
 
-From my intiial research, blogs made with SSGs, when compared to WordPress, are faster, more secure, and require much less maintenance.
 
 ## WordPress vs static sites
 Luckily for me, most of the things I learned about WordPress' templating and theming strategy were applicable to popular static site generators. 
