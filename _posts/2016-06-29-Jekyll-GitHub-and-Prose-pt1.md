@@ -53,9 +53,6 @@ I'm going to use Jekyll to build the website and GitHub Pages to host it. Hostin
 10. Add styling for special Jekyll code such as syntax highlighting for code, and time and date
 
 
-## WordPress vs static sites
-Luckily for me, most of the things I learned about WordPress' templating and theming strategy were applicable to popular static site generators. 
-
 ### Templates
 A typical blog can be broken down to static and dynamic sections. Static sections stay constant throughout a website, such as navigation bars, footer sections, and sidebars. Dynamic sections display different content based on what's being requested by a visitor; an example would be a blog post. 
 
