@@ -1,6 +1,6 @@
 ---
 title: 'Jekyll, GitHub, and Prose pt1'
-date: {}
+date: 2016-08-12T00:00:00.000Z
 layout: post
 excerpt: >-
   I wanted to set up a small website with my contact information and a blog
