@@ -5,7 +5,7 @@ Most of the code is copied from this article: https://www.smashingmagazine.com/2
 /*These are two scales for modular typography. The first is for mobile devices,
 and the second is for desktops.*/
 $mod_1: 1.067;
-$mod_2: 1.333;
+$mod_2: 1.25;
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
