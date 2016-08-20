@@ -15,7 +15,6 @@ When my name is googled I want to make sure that I am at the very top instead of
 
 ### Requirements:
 -	built from scratch, no frameworks
-
 -	clean/minimalist/brutalist aesthetic
 -	fluid typography and flow on every device (better than responsive design)
 -	zero Javascript unless it's absolutly neccesarry
