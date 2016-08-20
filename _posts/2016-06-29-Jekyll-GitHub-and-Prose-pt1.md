@@ -10,8 +10,8 @@ excerpt: >-
 published: true
 ---
 
-c### Background
-When my name is googled I want to make sure that I am at the very top instead of some other people who share my name.   In order to do that I need to set up a website that has great SEO, is fast, and is regularly updated-- such as a blog.
+### Background
+When my name is googled I want to make sure that I am at the very top instead of some other people who share my name.  In order to do that I need to set up a website that has great SEO, is fast, and is regularly updated-- such as a blog.
 
 
 ### Requirements:
