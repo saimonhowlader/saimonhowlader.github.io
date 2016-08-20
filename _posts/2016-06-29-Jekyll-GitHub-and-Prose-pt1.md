@@ -17,9 +17,9 @@ When my name is googled I want to make sure that I am at the very top instead of
 -  built from scratch, no frameworks
 -  clean/minimalist/brutalist aesthetic
 
--fluid typography and flow on every device (better than responsive design)
+-  fluid typography and flow on every device (better than responsive design)
 
--zero Javascript unless it's absolutly neccesarry
+-  zero Javascript unless it's absolutly neccesarry
 
 -frontpage for my contact information
 
