@@ -13,7 +13,7 @@ published: true
 ### Background
 When my name is googled I want to make sure that I am at the very top instead of some other people who share my name. In order to do that I need to set up a website that has great SEO, is fast, and is regularly updated-- such as a blog.
 
-### Requirements:
+### RequirementsW:
 -  built from scratch, no frameworks
 -	clean/minimalist/brutalist aesthetic
 -	fluid typography and flow on every device (better than responsive design)
