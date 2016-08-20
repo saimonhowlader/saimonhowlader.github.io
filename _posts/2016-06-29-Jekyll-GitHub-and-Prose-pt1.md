@@ -1,11 +1,12 @@
 ---
 title: 'Jekyll, GitHub, and Prose pt1'
-date: 2016-08-12T00:00:00.000Z
+date: 2016-08-20T00:00:00.000Z
 layout: post
 excerpt: >-
-  I wanted to set up a small website with my contact information and a blog
-  where I could document my work. I also needed to brush up on frontend
-  languages (html, css, javascript).
+  When my name is googled I want to make sure that I am at the very top instead
+  of some other people who share my name. In order to do that I need to set up a
+  website that has great SEO, is fast, and is regularly updated-- such as a
+  blog.
 published: true
 ---
 
@@ -13,7 +14,7 @@ published: true
 When my name is googled I want to make sure that I am at the very top instead of some other people who share my name. In order to do that I need to set up a website that has great SEO, is fast, and is regularly updated-- such as a blog.
 
 
-### xRequirements:
+### Requirements:
 -built from scratch, no frameworks
 
 -clean/minimalist/brutalist aesthetic
