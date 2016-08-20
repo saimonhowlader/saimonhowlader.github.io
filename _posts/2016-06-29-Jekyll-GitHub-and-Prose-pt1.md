@@ -1,6 +1,6 @@
 ---
 title: 'Jekyll, GitHub, and Prose pt1'
-date: {}
+date: 2016-08-20T00:00:00.000Z
 layout: post
 excerpt: >-
   When my name is googled I want to make sure that I am at the very top instead
